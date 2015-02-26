@@ -32,4 +32,13 @@ class CountryTableBuilder extends TableBuilder
         'entry.enabled.icon'
     ];
 
+    /**
+     * The table buttons.
+     *
+     * @var array
+     */
+    protected $buttons = [
+        'edit'
+    ];
+
 }
