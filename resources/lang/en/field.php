@@ -22,5 +22,29 @@ return [
     ],
     'flag'            => [
         'name' => 'Flag'
+    ],
+    'call_prefix'     => [
+        'name' => 'Call Prefix'
+    ],
+    'address_format'  => [
+        'name' => 'Address Format'
+    ],
+    'numeric_iso'     => [
+        'name' => 'Numeric ISO'
+    ],
+    'symbol'          => [
+        'name' => 'Symbol'
+    ],
+    'exchange_rate'   => [
+        'name' => 'Exchange Rate'
+    ],
+    'zone'            => [
+        'name' => 'Zone'
+    ],
+    'currency'        => [
+        'name' => 'Currency'
+    ],
+    'country'         => [
+        'name' => 'Country'
     ]
 ];

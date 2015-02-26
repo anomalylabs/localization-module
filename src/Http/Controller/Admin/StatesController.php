@@ -1,27 +1,27 @@
 <?php namespace Anomaly\LocalizationModule\Http\Controller\Admin;
 
-use Anomaly\LocalizationModule\Language\Form\LanguageFormBuilder;
-use Anomaly\LocalizationModule\Language\Table\LanguageTableBuilder;
+use Anomaly\LocalizationModule\State\Form\StateFormBuilder;
+use Anomaly\LocalizationModule\State\Table\StateTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
- * Class LanguagesController
+ * Class StatesController
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule\Http\Controller\Admin
  */
-class LanguagesController extends AdminController
+class StatesController extends AdminController
 {
 
     /**
      * Return an index of existing entries.
      *
-     * @param LanguageTableBuilder $table
+     * @param StateTableBuilder $table
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function index(LanguageTableBuilder $table)
+    public function index(StateTableBuilder $table)
     {
         return $table->render();
     }
@@ -29,10 +29,10 @@ class LanguagesController extends AdminController
     /**
      * Return a form for a new entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param StateFormBuilder $form
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function create(LanguageFormBuilder $form)
+    public function create(StateFormBuilder $form)
     {
         return $form->render();
     }
@@ -40,11 +40,11 @@ class LanguagesController extends AdminController
     /**
      * Return a form for an existing entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param StateFormBuilder    $form
      * @param                     $id
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function edit(LanguageFormBuilder $form, $id)
+    public function edit(StateFormBuilder $form, $id)
     {
         return $form->render($id);
     }

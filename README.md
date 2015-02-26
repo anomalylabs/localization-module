@@ -2,6 +2,6 @@
 
 *anomaly.module.localization*
 
-#### A localization management module.
+#### System localization management.
 
-The localization module is responsible for managing system localization configuration.
+The localization module is responsible for managing system localization configurations.

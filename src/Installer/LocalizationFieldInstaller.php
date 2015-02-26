@@ -21,10 +21,8 @@ class LocalizationFieldInstaller extends FieldInstaller
     protected $fields = [
         'name'            => 'anomaly.field_type.text',
         'iso'             => [
-            'type'  => 'anomaly.field_type.slug',
+            'type'  => 'anomaly.field_type.text',
             'rules' => [
-                'min:2',
-                'max:2',
                 'alpha'
             ]
         ],
@@ -37,7 +35,35 @@ class LocalizationFieldInstaller extends FieldInstaller
             ]
         ],
         'rtl'             => 'anomaly.field_type.boolean',
-        'flag'            => 'anomaly.field_type.country'
+        'flag'            => 'anomaly.field_type.country',
+        'call_prefix'     => 'anomaly.field_type.text',
+        'address_format'  => 'anomaly.field_type.textarea',
+        'numeric_iso'     => 'anomaly.field_type.integer',
+        'symbol'          => 'anomaly.field_type.text',
+        'exchange_rate'   => [
+            'type'   => 'anomaly.field_type.decimal',
+            'config' => [
+                'decimals' => 6
+            ]
+        ],
+        'zone'            => [
+            'type'   => 'anomaly.field_type.relationship',
+            'config' => [
+                'related' => 'Anomaly\LocalizationModule\Zone\ZoneModel'
+            ]
+        ],
+        'currency'        => [
+            'type'   => 'anomaly.field_type.relationship',
+            'config' => [
+                'related' => 'Anomaly\LocalizationModule\Currency\CurrencyModel'
+            ]
+        ],
+        'country'         => [
+            'type'   => 'anomaly.field_type.relationship',
+            'config' => [
+                'related' => 'Anomaly\LocalizationModule\Country\CountryModel'
+            ]
+        ]
     ];
 
 }

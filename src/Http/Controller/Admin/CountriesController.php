@@ -1,27 +1,27 @@
 <?php namespace Anomaly\LocalizationModule\Http\Controller\Admin;
 
-use Anomaly\LocalizationModule\Language\Form\LanguageFormBuilder;
-use Anomaly\LocalizationModule\Language\Table\LanguageTableBuilder;
+use Anomaly\LocalizationModule\Country\Form\CountryFormBuilder;
+use Anomaly\LocalizationModule\Country\Table\CountryTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
- * Class LanguagesController
+ * Class CountriesController
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule\Http\Controller\Admin
  */
-class LanguagesController extends AdminController
+class CountriesController extends AdminController
 {
 
     /**
      * Return an index of existing entries.
      *
-     * @param LanguageTableBuilder $table
+     * @param CountryTableBuilder $table
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function index(LanguageTableBuilder $table)
+    public function index(CountryTableBuilder $table)
     {
         return $table->render();
     }
@@ -29,10 +29,10 @@ class LanguagesController extends AdminController
     /**
      * Return a form for a new entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param CountryFormBuilder $form
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function create(LanguageFormBuilder $form)
+    public function create(CountryFormBuilder $form)
     {
         return $form->render();
     }
@@ -40,11 +40,11 @@ class LanguagesController extends AdminController
     /**
      * Return a form for an existing entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param CountryFormBuilder  $form
      * @param                     $id
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function edit(LanguageFormBuilder $form, $id)
+    public function edit(CountryFormBuilder $form, $id)
     {
         return $form->render($id);
     }

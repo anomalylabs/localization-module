@@ -4,6 +4,10 @@ return [
     'name'        => 'Localization',
     'description' => 'System localization management.',
     'section'     => [
-        'languages' => 'Languages'
+        'currencies' => 'Currencies',
+        'languages'  => 'Languages',
+        'countries'  => 'Countries',
+        'states'     => 'States',
+        'zones'      => 'Zones'
     ]
 ];

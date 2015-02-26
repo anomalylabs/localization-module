@@ -3,14 +3,14 @@
 use Anomaly\Streams\Platform\Stream\StreamInstaller;
 
 /**
- * Class LocalizationStreamInstaller
+ * Class StatesStreamInstaller
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule\Installer
  */
-class LocalizationStreamInstaller extends StreamInstaller
+class StatesStreamInstaller extends StreamInstaller
 {
 
     /**
@@ -19,7 +19,7 @@ class LocalizationStreamInstaller extends StreamInstaller
      * @var array
      */
     protected $stream = [
-        'slug'         => 'languages',
+        'slug'         => 'states',
         'title_column' => 'name',
         'locked'       => true
     ];
@@ -30,13 +30,11 @@ class LocalizationStreamInstaller extends StreamInstaller
      * @var array
      */
     protected $assignments = [
-        'name'            => ['required' => true, 'unique' => true],
-        'iso'             => ['required' => true, 'unique' => true],
-        'datetime_format' => ['required' => true],
-        'date_format'     => ['required' => true],
-        'enabled'         => [],
-        'flag'            => [],
-        'rtl'             => []
+        'name'    => ['required' => true, 'unique' => true],
+        'iso'     => ['required' => true, 'unique' => true],
+        'zone'    => ['required' => true],
+        'country' => ['required' => true],
+        'enabled' => []
     ];
 
 }

@@ -20,7 +20,11 @@ class LocalizationModuleInstaller extends ModuleInstaller
      */
     protected $installers = [
         'Anomaly\LocalizationModule\Installer\LocalizationFieldInstaller',
-        'Anomaly\LocalizationModule\Installer\LocalizationStreamInstaller'
+        'Anomaly\LocalizationModule\Installer\CurrenciesStreamInstaller',
+        'Anomaly\LocalizationModule\Installer\LanguagesStreamInstaller',
+        'Anomaly\LocalizationModule\Installer\CountriesStreamInstaller',
+        'Anomaly\LocalizationModule\Installer\StatesStreamInstaller',
+        'Anomaly\LocalizationModule\Installer\ZonesStreamInstaller'
     ];
 
 }

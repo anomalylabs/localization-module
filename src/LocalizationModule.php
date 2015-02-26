@@ -26,7 +26,27 @@ class LocalizationModule extends Module
      * @var array
      */
     protected $sections = [
-        'languages' => [
+        'languages'  => [
+            'buttons' => [
+                'create'
+            ]
+        ],
+        'zones'      => [
+            'buttons' => [
+                'create'
+            ]
+        ],
+        'countries'  => [
+            'buttons' => [
+                'create'
+            ]
+        ],
+        'states'     => [
+            'buttons' => [
+                'create'
+            ]
+        ],
+        'currencies' => [
             'buttons' => [
                 'create'
             ]

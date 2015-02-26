@@ -1,27 +1,27 @@
 <?php namespace Anomaly\LocalizationModule\Http\Controller\Admin;
 
-use Anomaly\LocalizationModule\Language\Form\LanguageFormBuilder;
-use Anomaly\LocalizationModule\Language\Table\LanguageTableBuilder;
+use Anomaly\LocalizationModule\Zone\Form\ZoneFormBuilder;
+use Anomaly\LocalizationModule\Zone\Table\ZoneTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
- * Class LanguagesController
+ * Class ZonesController
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule\Http\Controller\Admin
  */
-class LanguagesController extends AdminController
+class ZonesController extends AdminController
 {
 
     /**
      * Return an index of existing entries.
      *
-     * @param LanguageTableBuilder $table
+     * @param ZoneTableBuilder $table
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function index(LanguageTableBuilder $table)
+    public function index(ZoneTableBuilder $table)
     {
         return $table->render();
     }
@@ -29,10 +29,10 @@ class LanguagesController extends AdminController
     /**
      * Return a form for a new entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param ZoneFormBuilder $form
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function create(LanguageFormBuilder $form)
+    public function create(ZoneFormBuilder $form)
     {
         return $form->render();
     }
@@ -40,11 +40,11 @@ class LanguagesController extends AdminController
     /**
      * Return a form for an existing entry.
      *
-     * @param LanguageFormBuilder $form
+     * @param ZoneFormBuilder     $form
      * @param                     $id
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function edit(LanguageFormBuilder $form, $id)
+    public function edit(ZoneFormBuilder $form, $id)
     {
         return $form->render($id);
     }

@@ -20,6 +20,10 @@ class LocalizationModuleServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->register('Anomaly\LocalizationModule\Zone\ZoneServiceProvider');
+        $this->app->register('Anomaly\LocalizationModule\State\StateServiceProvider');
+        $this->app->register('Anomaly\LocalizationModule\Country\CountryServiceProvider');
+        $this->app->register('Anomaly\LocalizationModule\Currency\CurrencyServiceProvider');
         $this->app->register('Anomaly\LocalizationModule\Language\LanguageServiceProvider');
     }
 }
