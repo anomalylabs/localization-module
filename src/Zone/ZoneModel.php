@@ -14,4 +14,20 @@ use Anomaly\Streams\Platform\Model\Localization\LocalizationZonesEntryModel;
 class ZoneModel extends LocalizationZonesEntryModel implements ZoneInterface
 {
 
+    /**
+     * The cache minutes.
+     *
+     * @var int
+     */
+    protected $cacheMinutes = 9999;
+
+    /**
+     * Get the name.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 }

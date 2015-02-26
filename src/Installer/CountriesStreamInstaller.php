@@ -21,6 +21,7 @@ class CountriesStreamInstaller extends StreamInstaller
     protected $stream = [
         'slug'         => 'countries',
         'title_column' => 'name',
+        'translatable' => true,
         'locked'       => true
     ];
 
