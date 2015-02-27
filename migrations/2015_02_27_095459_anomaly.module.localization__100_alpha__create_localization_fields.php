@@ -1,16 +1,15 @@
-<?php namespace Anomaly\LocalizationModule\Installer;
+<?php
 
-use Anomaly\Streams\Platform\Field\FieldInstaller;
+use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class LocalizationFieldInstaller
+ * Class AnomalyModuleLocalization_1_0_0_alpha_CreateLocalizationFields
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\LocalizationModule\Installer
  */
-class LocalizationFieldInstaller extends FieldInstaller
+class AnomalyModuleLocalization_100_alpha_CreateLocalizationFields extends Migration
 {
 
     /**

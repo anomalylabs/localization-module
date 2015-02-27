@@ -1,16 +1,15 @@
-<?php namespace Anomaly\LocalizationModule\Installer;
+<?php
 
-use Anomaly\Streams\Platform\Stream\StreamInstaller;
+use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class StatesStreamInstaller
+ * Class AnomalyModuleLocalization_100_alpha_CreateStatesStream
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\LocalizationModule\Installer
  */
-class StatesStreamInstaller extends StreamInstaller
+class AnomalyModuleLocalization_100_alpha_CreateStatesStream extends Migration
 {
 
     /**

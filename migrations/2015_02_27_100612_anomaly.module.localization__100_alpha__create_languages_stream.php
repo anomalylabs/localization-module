@@ -1,16 +1,15 @@
-<?php namespace Anomaly\LocalizationModule\Installer;
+<?php
 
-use Anomaly\Streams\Platform\Stream\StreamInstaller;
+use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class LanguagesStreamInstaller
+ * Class AnomalyModuleLocalization_100_alpha_CreateLanguagesStream
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\LocalizationModule\Installer
  */
-class LanguagesStreamInstaller extends StreamInstaller
+class AnomalyModuleLocalization_100_alpha_CreateLanguagesStream extends Migration
 {
 
     /**

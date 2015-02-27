@@ -1,16 +1,15 @@
-<?php namespace Anomaly\LocalizationModule\Installer;
+<?php
 
-use Anomaly\Streams\Platform\Stream\StreamInstaller;
+use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class CurrenciesStreamInstaller
+ * Class AnomalyModuleLocalization_1_0_0_alpha_CreateCurrenciesStream
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\LocalizationModule\Installer
  */
-class CurrenciesStreamInstaller extends StreamInstaller
+class AnomalyModuleLocalization_100_alpha_CreateCurrenciesStream extends Migration
 {
 
     /**
