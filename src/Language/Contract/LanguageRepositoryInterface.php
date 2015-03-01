@@ -14,6 +14,14 @@ interface LanguageRepositoryInterface
 {
 
     /**
+     * Create a new language.
+     *
+     * @param array $attributes
+     * @return static
+     */
+    public function create(array $attributes);
+
+    /**
      * Return only enabled languages.
      *
      * @return EntryCollection

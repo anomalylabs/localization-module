@@ -33,6 +33,17 @@ class LanguageRepository implements LanguageRepositoryInterface
     }
 
     /**
+     * Create a new language.
+     *
+     * @param array $attributes
+     * @return static
+     */
+    public function create(array $attributes)
+    {
+        return $this->model->create($attributes);
+    }
+
+    /**
      * Return only enabled languages.
      *
      * @return EntryCollection
