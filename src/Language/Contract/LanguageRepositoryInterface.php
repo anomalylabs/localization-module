@@ -1,5 +1,7 @@
 <?php namespace Anomaly\LocalizationModule\Language\Contract;
 
+use Anomaly\Streams\Platform\Entry\EntryCollection;
+
 /**
  * Interface LanguageRepositoryInterface
  *
@@ -11,4 +13,10 @@
 interface LanguageRepositoryInterface
 {
 
+    /**
+     * Return only enabled languages.
+     *
+     * @return EntryCollection
+     */
+    public function enabled();
 }

@@ -1,6 +1,7 @@
 <?php namespace Anomaly\LocalizationModule\Language;
 
 use Anomaly\LocalizationModule\Language\Contract\LanguageRepositoryInterface;
+use Anomaly\Streams\Platform\Entry\EntryCollection;
 
 /**
  * Class LanguageRepository
@@ -28,5 +29,15 @@ class LanguageRepository implements LanguageRepositoryInterface
     public function __construct(LanguageModel $model)
     {
         $this->model = $model;
+    }
+
+    /**
+     * Return only enabled languages.
+     *
+     * @return EntryCollection
+     */
+    public function enabled()
+    {
+        return $this->model->where('enabled', true)->get();
     }
 }
