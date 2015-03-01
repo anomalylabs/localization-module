@@ -19,4 +19,12 @@ interface LanguageRepositoryInterface
      * @return EntryCollection
      */
     public function enabled();
+
+    /**
+     * Find a language by it's ISO.
+     *
+     * @param $iso
+     * @return LanguageInterface
+     */
+    public function findByIso($iso);
 }

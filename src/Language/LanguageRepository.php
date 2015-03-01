@@ -1,5 +1,6 @@
 <?php namespace Anomaly\LocalizationModule\Language;
 
+use Anomaly\LocalizationModule\Language\Contract\LanguageInterface;
 use Anomaly\LocalizationModule\Language\Contract\LanguageRepositoryInterface;
 use Anomaly\Streams\Platform\Entry\EntryCollection;
 
@@ -39,5 +40,16 @@ class LanguageRepository implements LanguageRepositoryInterface
     public function enabled()
     {
         return $this->model->where('enabled', true)->get();
+    }
+
+    /**
+     * Find a language by it's ISO.
+     *
+     * @param $iso
+     * @return LanguageInterface
+     */
+    public function findByIso($iso)
+    {
+        return $this->model->where('iso', $iso)->first();
     }
 }
