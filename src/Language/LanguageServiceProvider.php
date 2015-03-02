@@ -14,6 +14,18 @@ class LanguageServiceProvider extends ServiceProvider
 {
 
     /**
+     * Boot the service provider.
+     */
+    public function boot()
+    {
+        if (env('INSTALLED')) {
+            $this->app->make('twig')->addExtension(
+                $this->app->make('Anomaly\LocalizationModule\Language\LanguagePlugin')
+            );
+        }
+    }
+
+    /**
      * Register the service provider.
      *
      * @return void
