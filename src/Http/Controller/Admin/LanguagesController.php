@@ -3,6 +3,7 @@
 use Anomaly\LocalizationModule\Language\Form\LanguageFormBuilder;
 use Anomaly\LocalizationModule\Language\Table\LanguageTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
+use Illuminate\Routing\Redirector;
 
 /**
  * Class LanguagesController
@@ -14,6 +15,17 @@ use Anomaly\Streams\Platform\Http\Controller\AdminController;
  */
 class LanguagesController extends AdminController
 {
+
+    /**
+     * Redirect to languages.
+     *
+     * @param Redirector $redirector
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function redirect(Redirector $redirector)
+    {
+        return $redirector->to('admin/localization/languages');
+    }
 
     /**
      * Return an index of existing entries.

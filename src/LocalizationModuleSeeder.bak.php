@@ -10,7 +10,7 @@ use Anomaly\Streams\Platform\Database\Seeder\Seeder;
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule
  */
-class LocalizationModuleSeeder extends Seeder
+class LocalizationModuleSeederBAK extends Seeder
 {
 
     /**
