@@ -1,6 +1,6 @@
 <?php namespace Anomaly\LocalizationModule;
 
-use Illuminate\Support\ServiceProvider;
+use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 
 /**
  * Class LocalizationModuleServiceProvider
@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\LocalizationModule
  */
-class LocalizationModuleServiceProvider extends ServiceProvider
+class LocalizationModuleServiceProvider extends AddonServiceProvider
 {
 
     /**
