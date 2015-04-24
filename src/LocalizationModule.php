@@ -14,11 +14,11 @@ class LocalizationModule extends Module
 {
 
     /**
-     * The module navigation.
+     * The module icon.
      *
      * @var string
      */
-    protected $navigation = 'streams::navigation.system';
+    protected $icon = 'language';
 
     /**
      * The module sections.
