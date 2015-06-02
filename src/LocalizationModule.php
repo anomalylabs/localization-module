@@ -28,7 +28,9 @@ class LocalizationModule extends Module
     protected $sections = [
         'languages'  => [
             'buttons' => [
-                'create'
+                'create' => [
+                    'href' => 'admin/localization/languages/create'
+                ]
             ]
         ],
         'zones'      => [
