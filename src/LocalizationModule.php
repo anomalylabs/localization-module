@@ -28,27 +28,27 @@ class LocalizationModule extends Module
     protected $sections = [
         'languages'  => [
             'buttons' => [
-                'create'
+                'new_language'
             ]
         ],
         'zones'      => [
             'buttons' => [
-                'create'
+                'new_zone'
             ]
         ],
         'countries'  => [
             'buttons' => [
-                'create'
+                'new_country'
             ]
         ],
         'states'     => [
             'buttons' => [
-                'create'
+                'new_state'
             ]
         ],
         'currencies' => [
             'buttons' => [
-                'create'
+                'new_currency'
             ]
         ]
     ];

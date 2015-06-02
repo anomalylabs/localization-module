@@ -17,17 +17,6 @@ class LanguagesController extends AdminController
 {
 
     /**
-     * Redirect to languages.
-     *
-     * @param Redirector $redirector
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function redirect(Redirector $redirector)
-    {
-        return $redirector->to('admin/localization/languages');
-    }
-
-    /**
      * Return an index of existing entries.
      *
      * @param LanguageTableBuilder $table
