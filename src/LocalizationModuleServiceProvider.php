@@ -54,16 +54,15 @@ class LocalizationModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $routes = [
-        'admin/localization'                      => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@redirect',
+        'admin/localization'                      => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@index',
+        'admin/localization/create'               => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@create',
+        'admin/localization/edit/{id}'            => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@edit',
         'admin/localization/countries'            => 'Anomaly\LocalizationModule\Http\Controller\Admin\CountriesController@index',
         'admin/localization/countries/create'     => 'Anomaly\LocalizationModule\Http\Controller\Admin\CountriesController@create',
         'admin/localization/countries/edit/{id}'  => 'Anomaly\LocalizationModule\Http\Controller\Admin\CountriesController@edit',
         'admin/localization/currencies'           => 'Anomaly\LocalizationModule\Http\Controller\Admin\CurrenciesController@index',
         'admin/localization/currencies/create'    => 'Anomaly\LocalizationModule\Http\Controller\Admin\CurrenciesController@create',
         'admin/localization/currencies/edit/{id}' => 'Anomaly\LocalizationModule\Http\Controller\Admin\CurrenciesController@edit',
-        'admin/localization/languages'            => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@index',
-        'admin/localization/languages/create'     => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@create',
-        'admin/localization/languages/edit/{id}'  => 'Anomaly\LocalizationModule\Http\Controller\Admin\LanguagesController@edit',
         'admin/localization/states'               => 'Anomaly\LocalizationModule\Http\Controller\Admin\StatesController@index',
         'admin/localization/states/create'        => 'Anomaly\LocalizationModule\Http\Controller\Admin\StatesController@create',
         'admin/localization/states/edit/{id}'     => 'Anomaly\LocalizationModule\Http\Controller\Admin\StatesController@edit',
